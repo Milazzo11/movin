@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/movin/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>80 Days Whole</title>
+  <meta name="description" content="80 days. 8 daily habits. One you. A whole-person challenge with Coach Lauren Raffa, Coach Madison Borges, and Dr. Lindsay Iadeluca. Nov 30 to Feb 17, $30.">
+  <meta name="theme-color" content="#111111">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="80 Days Whole">
+  <meta property="og:description" content="80 days. 8 daily habits. One you. Nov 30 to Feb 17. Registration closes Nov 29.">
+  <meta property="og:image" content="https://milazzo11.github.io/movin/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://milazzo11.github.io/movin/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://milazzo11.github.io/movin/og.png">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="80 Days Whole">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { margin: 0; height: 100%; background: #111111; }
+    #splash { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      font: 900 96px/1 "Arial Black", Arial, sans-serif; color: #b93a3a; transition: opacity .3s; }
+    #splash span { animation: pulse 1.2s ease-in-out infinite; }
+    @keyframes pulse { 50% { opacity: .45; } }
+  </style>
+</head>
+<body>
+  <div id="splash" aria-hidden="true"><span>80</span></div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (s) { s.style.opacity = '0'; setTimeout(function () { s.remove(); }, 350); }
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
